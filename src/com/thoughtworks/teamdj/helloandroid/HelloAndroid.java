@@ -2,6 +2,7 @@ package com.thoughtworks.teamdj.helloandroid;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 /**
  * Created by IntelliJ IDEA.
@@ -17,6 +18,8 @@ public class HelloAndroid extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        TextView textView = new TextView(this);
+        textView.setText("Hello Android");
+        setContentView(textView);
     }
 }
